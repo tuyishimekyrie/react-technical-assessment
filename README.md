@@ -21,7 +21,6 @@ A brief description of your project, its purpose, and the problem it solves.
 - [Contributing](#contributing)
 - [License](#license)
 
-
 ## Installation
 
 ### Prerequisites
@@ -31,22 +30,26 @@ List any prerequisites or dependencies that need to be installed.
 ### Steps
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Run the application:
+
    ```bash
    npm start
    ```
 
 4. Run tests:
+
    ```bash
    npm test
    ```
@@ -74,17 +77,20 @@ Provide instructions and examples for using the project, including any necessary
 ### Steps to Contribute
 
 1. **Create a branch** for your feature:
+
    ```bash
    git checkout -b your-feature-branch-name
    ```
 
 2. **Make changes** and commit them:
+
    ```bash
    git add .
    git commit -m "Describe your changes"
    ```
 
 3. **Push your branch** to GitHub:
+
    ```bash
    git push origin your-feature-branch-name
    ```
@@ -94,4 +100,3 @@ Provide instructions and examples for using the project, including any necessary
 ## License
 
 Include licensing information, such as the type of license (e.g., MIT, GPL) and a link to the license file.
-
