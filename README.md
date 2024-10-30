@@ -1,6 +1,6 @@
 # React Technical Assignment
 
-# DON'T TAKE MORE THAN 7 DAYS, AFTER RECEPTION, BEFORE SUBMITTING YOUR SOLUTION
+## DON'T TAKE MORE THAN 7 DAYS, AFTER RECEPTION, BEFORE SUBMITTING YOUR SOLUTION
 
 ## Description
 
@@ -25,7 +25,6 @@ Following this design
 
 ![image](https://github.com/user-attachments/assets/e8b88ba3-b583-47ce-b191-a1f641540713)
 
-
 - Create a task manager app that reflects the above design both in terms of responsiveness, UI and UX(make it look alive )
 - Add dark theme support to it(use your designer eye for this one😉)
 - Add support for i18n(English and French)
@@ -47,5 +46,3 @@ To make your application standout from the lot🤓😉
 - Completing all tasks is mandatory except for the bonus points
 - Share the link to your public GitHub repository containing your code
 - Share the link to your deployed application(on netlify or elsewhere)
-
-**PS: You don't need to wait until the deadline to submit your work😉**

@@ -1,13 +1,12 @@
-import React from "react";
+import classNames from "classnames";
 import { AiOutlineMessage } from "react-icons/ai";
 import { PiDotsThreeVerticalBold } from "react-icons/pi";
-import ProfileImage from "./ProfileImage";
 import p1 from "../assets/p1.jpg";
 import p2 from "../assets/p2.jpg";
 import p3 from "../assets/p3.jpg";
 import p4 from "../assets/p4.jpg";
-import classNames from "classnames";
 import { todo } from "../types/todo";
+import ProfileImage from "./ProfileImage";
 
 interface TodoProp {
   color: "red" | "blue" | "green" | "yellow";
