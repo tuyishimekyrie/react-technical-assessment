@@ -1,10 +1,17 @@
+import classNames from "classnames";
+
+type ColorName = 'red' | 'green' | 'blue' | 'yellow';
+
 type BubbleProps = {
-    colorName: string;
-  };
-  
-  const Bubble = ({ colorName }: BubbleProps) => {
-    return <div className={`w-3 h-3 bg-${colorName}-400 rounded-full`}></div>;
-  };
-  
-  export default Bubble;
-  
+  colorName: ColorName;
+};
+
+const Bubble = ({ colorName }: BubbleProps) => {
+  const bubbleClass = classNames('w-3 h-3 rounded-full', {
+    [`bg-${colorName}-400`]: colorName,
+  });
+
+  return <div className={bubbleClass} />;
+};
+
+export default Bubble;

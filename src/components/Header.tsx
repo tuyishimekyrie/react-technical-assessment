@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { HiOutlineBell } from "react-icons/hi";
 import { MdOutlineNightlight } from "react-icons/md";
+import Bubble from "./Bubble";
 
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
         <MdOutlineNightlight className="bg-gray-100 p-1 w-8 h-8 rounded-md text-gray-400" />
         <div className="relative">
           <HiOutlineBell className="bg-gray-100 p-1 w-8 h-8 rounded-md text-gray-400" />
-          {/* <Bubble colorName={"green"}  /> */}
+          <Bubble colorName="green"  />
         </div>
       </div>
     </div>
