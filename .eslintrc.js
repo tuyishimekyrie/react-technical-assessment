@@ -7,9 +7,12 @@ module.exports = {
       'plugin:tailwindcss/recommended',
       'plugin:prettier/recommended'
     ],
+    parserOptions: {
+      ecmaVersion: 2021, 
+      sourceType: 'module',
+    },
     rules: {
-      // Customize your rules here
-      'react/react-in-jsx-scope': 'off', // If using React 17+
+      'constructor-super': 'error', 
     },
     settings: {
       react: {
