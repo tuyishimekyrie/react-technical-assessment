@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import ThemeProvider from './components/ThemeProvider.tsx';
 import { RouterProvider } from 'react-router-dom';
 import router from './routes/route.tsx';
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const queryClient = new QueryClient();
 createRoot(document.getElementById('root')!).render(
