@@ -1,0 +1,49 @@
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16' # Change this to your desired Node version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run ESLint
+        run: npm run lint # Make sure you have a lint script in your package.json
+
+      - name: Run Prettier
+        run: npm run format-check # Make sure you have a format-check script in your package.json
+
+  test:
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16' # Change this to your desired Node version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test # Make sure your test script is correctly set in package.json
