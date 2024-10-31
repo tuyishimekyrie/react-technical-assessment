@@ -19,11 +19,13 @@ const Header = () => {
           <MdOutlineNightlight
             className="bg-gray-100 dark:bg-gray-800  p-1 w-8 h-8 rounded-md text-gray-400 dark:text-white hover:cursor-pointer"
             onClick={toggleTheme}
+            data-testid="night-icon"
           />
         ) : (
           <WiDaySunny
             className="bg-gray-100 dark:bg-gray-800  p-1 w-8 h-8 rounded-md text-gray-400 dark:text-white hover:cursor-pointer"
             onClick={toggleTheme}
+            data-testid="day-icon"
           />
         )}
         <div className="">

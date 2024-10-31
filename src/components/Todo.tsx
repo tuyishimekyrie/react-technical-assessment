@@ -13,7 +13,7 @@ interface TodoProp {
   todo: todo;
 }
 
-const Todo = ({  todo }: TodoProp) => {
+const Todo = ({ todo }: TodoProp) => {
   const allImages = [p1, p2, p3, p4];
 
   const imageCount = Math.floor(Math.random() * 3) + 2;
@@ -23,15 +23,19 @@ const Todo = ({  todo }: TodoProp) => {
 
   return (
     <div className="">
-      <div className="flex flex-col gap-4 w-64 h-60  justify-between p-4 rounded-2xl bg-white dark:bg-gray-800">
+
+      <div
+        data-testid={`todo-${todo.id}`}
+        className="flex flex-col gap-4 w-64 h-60 justify-between p-4 rounded-2xl bg-white dark:bg-gray-800"
+      >
         <div className="flex items-center justify-between">
-        <p
-          className={classNames("px-2 rounded-md", {
-            "text-green-500 bg-green-50": todo.completed,
-            "text-red-500 bg-red-50": !todo.completed,
-          })}
-        >
-            {todo.completed ? "completed"  : "In Progress"}
+          <p
+            className={classNames("px-2 rounded-md", {
+              "text-green-500 bg-green-50": todo.completed,
+              "text-red-500 bg-red-50": !todo.completed,
+            })}
+          >
+            {todo.completed ? "completed" : "In Progress"}
           </p>
           <PiDotsThreeVerticalBold className="dark:text-white" />
         </div>

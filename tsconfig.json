@@ -3,5 +3,20 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+
+    "compilerOptions": {
+      "target": "esnext",
+      "module": "esnext", // or "es2022" or "es2020"
+      "types": ["jest", "@testing-library/jest-dom", "node"],
+      "moduleResolution": "node",
+      "jsx": "react-jsx",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "skipLibCheck": true
+    }
+
+  
+  
 }

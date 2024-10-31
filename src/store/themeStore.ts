@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
-interface ThemeState {
+export interface ThemeState {
   isDarkMode: boolean;
   toggleTheme: () => void;
 }
