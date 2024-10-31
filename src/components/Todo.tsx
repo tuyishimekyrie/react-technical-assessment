@@ -20,8 +20,8 @@ const Todo = ({ todo }: TodoProp) => {
   const imageCount = Math.floor(Math.random() * 3) + 2;
   const selectedImages = allImages.slice(0, imageCount);
 
-  if(!todo) {
-    return <Skeleton />
+  if (!todo) {
+    return <Skeleton />;
   }
 
   // console.log(todo);
