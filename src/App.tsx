@@ -1,6 +1,6 @@
-import HeaderNavigation from "./components/HeaderNavigation";
+import HeaderNavigation from './components/HeaderNavigation';
 
-import Todos from "./components/Todos";
+import Todos from './components/Todos';
 
 const App = () => {
   return (

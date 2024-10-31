@@ -1,7 +1,7 @@
 import React, { PropsWithChildren, useEffect } from 'react';
 import useThemeStore from '../store/themeStore';
 
-const ThemeProvider:React.FC<PropsWithChildren> = ({ children }) => {
+const ThemeProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const isDarkMode = useThemeStore((state) => state.isDarkMode);
 
   useEffect(() => {
