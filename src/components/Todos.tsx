@@ -4,12 +4,12 @@ import { VscAdd } from 'react-icons/vsc';
 import TodoList, { fetchTodos } from './TodoList';
 import { useQuery } from 'react-query';
 
+import SkeletonTodo from './SkeletonTodo';
+
 const Todos = () => {
   const { data: todos, isLoading, error } = useQuery('todos', fetchTodos);
 
   const [filter, setFilter] = useState('all');
-
-  if (isLoading) return <p>Loading...</p>;
 
   if (error instanceof Error)
     return <p>Error fetching todos: {error.message}</p>;
@@ -40,10 +40,10 @@ const Todos = () => {
       <div className="bg-white dark:bg-gray-800 rounded-xl flex justify-between items-center mx-10 my-4 gap-4 px-4">
         <div className="flex gap-4">
           <div
-            className={`flex items-center border-b-4 gap-4 p-4 cursor-pointer ${filter === 'all' ? 'border-violet-700 text-violet-700 dark:text-violet-400' : 'border-none text-gray-400'}`}
+            className={`flex items-center border-b-4 gap-4 p-4 cursor-pointer  ${filter === 'all' ? 'border-violet-700 text-violet-700 dark:text-violet-400' : 'border-none text-gray-400'}`}
             onClick={() => handleFilterChange('all')}
           >
-            <p>All Tasks</p>
+            <p className=''>All Tasks</p>
             <p className="bg-gray-200 px-2 py-1 text-xs rounded-lg">
               {todos?.todos.length}
             </p>
@@ -88,8 +88,9 @@ const Todos = () => {
         </div>
       </div>
       <div className="px-10 py-4 flex flex-wrap gap-4">
+        {isLoading &&
+          Array.from({ length: 6 }, (_, index) => <SkeletonTodo key={index} />)}
         <TodoList todos={filteredTodos()} />{' '}
-        {/* Pass the filtered todos to TodoList */}
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ import p3 from '../assets/p3.jpg';
 import p4 from '../assets/p4.jpg';
 import { todo } from '../types/todo';
 import ProfileImage from './ProfileImage';
+import Skeleton from 'react-loading-skeleton';
 
 interface TodoProp {
   color: 'red' | 'blue' | 'green' | 'yellow';
@@ -18,6 +19,10 @@ const Todo = ({ todo }: TodoProp) => {
 
   const imageCount = Math.floor(Math.random() * 3) + 2;
   const selectedImages = allImages.slice(0, imageCount);
+
+  if(!todo) {
+    return <Skeleton />
+  }
 
   // console.log(todo);
 
