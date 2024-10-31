@@ -1,48 +1,89 @@
-# React Technical Assignment
-
-## DON'T TAKE MORE THAN 7 DAYS, AFTER RECEPTION, BEFORE SUBMITTING YOUR SOLUTION
+# Project Title
 
 ## Description
 
-This assignment will help in assessing your technical skills. From designer touch to code structure, ES6+ knowledge and React mastery, last but not least proper test coverage.
+A brief description of your project, its purpose, and the problem it solves.
 
-## Project
+## Table of Contents
 
-A TODO app🤪, not very original but it will help us to assess your designer skills😎, knowledge of React frameworks/tools and the JS ecosystem in general.
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Stack/Tools
 
-- React with TypeScript or JavaScript, choose whatever you're more comfortable with
-- Jest & React Testing Library
-- Zustand, React context or Redux
-- Tanstack query (React query)
-- React Router
-- Tailwind CSS
+## Installation
 
-## Task
+### Prerequisites
 
-Following this design
+List any prerequisites or dependencies that need to be installed.
 
-![image](https://github.com/user-attachments/assets/e8b88ba3-b583-47ce-b191-a1f641540713)
+### Steps
 
-- Create a task manager app that reflects the above design both in terms of responsiveness, UI and UX(make it look alive )
-- Add dark theme support to it(use your designer eye for this one😉)
-- Add support for i18n(English and French)
-- Use [dummy todo api](https://dummyjson.com/docs/todos) for all the CRUD operations
-- Unit & component tests(just enough to showcase your testing skills)
-- Deploy on Netlify or any other service you want
-- Add a clear and concise readme that explains all the needed steps to deploy and run tests of the project in a local environment
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+   cd your-repo-name
+   ```
 
-## Bonus Points
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-To make your application standout from the lot🤓😉
+3. Run the application:
+   ```bash
+   npm start
+   ```
 
-- Make sure all the tasks above are completed before tackling the points below
-- Add GitHub actions that run all tests on PR events
-- E2E tests 🔥🔥🔥 for at least 2 CRUD operations
+4. Run tests:
+   ```bash
+   npm test
+   ```
 
-## Submission
+## Usage
 
-- Completing all tasks is mandatory except for the bonus points
-- Share the link to your public GitHub repository containing your code
-- Share the link to your deployed application(on netlify or elsewhere)
+Provide instructions and examples for using the project, including any necessary commands or configuration settings.
+
+## Features
+
+- List the main features of the project.
+- Highlight any unique aspects or functionalities.
+
+## Technologies
+
+- **React** (or any other framework/library)
+- **TypeScript** (or JavaScript)
+- **State Management** (e.g., Redux, Zustand)
+- **Testing** (e.g., Jest, React Testing Library)
+- **Styling** (e.g., Tailwind CSS)
+- **APIs** (any APIs being used)
+
+## Contributing
+
+### Steps to Contribute
+
+1. **Create a branch** for your feature:
+   ```bash
+   git checkout -b your-feature-branch-name
+   ```
+
+2. **Make changes** and commit them:
+   ```bash
+   git add .
+   git commit -m "Describe your changes"
+   ```
+
+3. **Push your branch** to GitHub:
+   ```bash
+   git push origin your-feature-branch-name
+   ```
+
+4. **Create a Pull Request** on GitHub.
+
+## License
+
+Include licensing information, such as the type of license (e.g., MIT, GPL) and a link to the license file.
+
