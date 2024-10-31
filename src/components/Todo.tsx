@@ -19,11 +19,11 @@ const Todo = ({  todo }: TodoProp) => {
   const imageCount = Math.floor(Math.random() * 3) + 2;
   const selectedImages = allImages.slice(0, imageCount);
 
-  console.log(todo);
+  // console.log(todo);
 
   return (
     <div className="">
-      <div className="flex flex-col gap-4 w-64 h-60  justify-between p-4 rounded-2xl bg-white">
+      <div className="flex flex-col gap-4 w-64 h-60  justify-between p-4 rounded-2xl bg-white dark:bg-gray-800">
         <div className="flex items-center justify-between">
         <p
           className={classNames("px-2 rounded-md", {
@@ -33,10 +33,10 @@ const Todo = ({  todo }: TodoProp) => {
         >
             {todo.completed ? "completed"  : "In Progress"}
           </p>
-          <PiDotsThreeVerticalBold />
+          <PiDotsThreeVerticalBold className="dark:text-white" />
         </div>
         <div>
-          <p>{todo.todo}</p>
+          <p className="dark:text-white">{todo.todo}</p>
           {/* <span className="text-sm text-gray-400">Landing Page UI</span> */}
         </div>
         <div className="flex items-center justify-between border-t-2 border-slate-50 py-4">

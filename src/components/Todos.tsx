@@ -1,33 +1,33 @@
 import { SetStateAction, useState } from 'react';
 import { PiSortAscendingThin } from "react-icons/pi";
 import { VscAdd } from "react-icons/vsc";
-import TodoList, { fetchTodos } from "./TodoList"; // Assuming TodoList accepts props to display todos
+import TodoList, { fetchTodos } from "./TodoList";
 import { useQuery } from "react-query";
 
 
 const Todos = () => {
   const { data: todos, isLoading, error } = useQuery("todos", fetchTodos);
   
-  // State to track the selected filter
+
   const [filter, setFilter] = useState("all");
 
-  // Loading state
+
   if (isLoading) return <p>Loading...</p>;
   
-  // Error state
+
   if (error instanceof Error) return <p>Error fetching todos: {error.message}</p>;
 
-  // Filtered todos based on the selected filter
+
   const filteredTodos = () => {
     if (!todos) return [];
 
     switch (filter) {
       case "all":
-        return todos.todos; // All tasks
+        return todos.todos; 
       case "todo":
         return todos.todos.filter(todo => !todo.completed);
       case "in-progress":
-        return todos.todos.filter(todo => todo.completed === false); // Adjust based on your data structure
+        return todos.todos.filter(todo => todo.completed === false);
       case "completed":
         return todos.todos.filter(todo => todo.completed === true);
       default:
@@ -41,10 +41,10 @@ const Todos = () => {
 
   return (
     <div className="overflow-y-auto h-full">
-      <div className="bg-white rounded-xl flex justify-between items-center mx-10 my-4 gap-4 px-4">
+      <div className="bg-white dark:bg-gray-800 rounded-xl flex justify-between items-center mx-10 my-4 gap-4 px-4">
         <div className="flex gap-4">
           <div
-            className={`flex items-center border-b-4 gap-4 p-4 cursor-pointer ${filter === "all" ? "border-violet-700 text-violet-700" : "border-white text-gray-400"}`}
+            className={`flex items-center border-b-4 gap-4 p-4 cursor-pointer ${filter === "all" ? "border-violet-700 text-violet-700 dark:text-violet-400"  : "border-none text-gray-400"}`}
             onClick={() => handleFilterChange("all")}
           >
             <p>All Tasks</p>
@@ -73,13 +73,13 @@ const Todos = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <div className="flex gap-2 py-2 border-2 border-slate-100 text-slate-200 px-2 rounded-xl">
-            <PiSortAscendingThin className="text-slate-600 w-6 h-6" />
-            <p className="text-slate-600">Filter & Sort</p>
+          <div className="flex gap-2 py-2 border-2 border-slate-100 dark:border-slate-600 text-slate-200 px-2 rounded-xl">
+            <PiSortAscendingThin className="text-slate-600 dark:text-slate-300 w-6 h-6" />
+            <p className="text-slate-600 dark:text-slate-300">Filter & Sort</p>
           </div>
-          <div className="flex items-center gap-2 py-2 border-2 border-slate-100 text-slate-200 px-2 rounded-xl">
-            <VscAdd className="text-slate-600 w-4 h-4" />
-            <p className="text-slate-600">New Task</p>
+          <div className="flex items-center gap-2 py-2 border-2 border-slate-100 dark:border-slate-600 text-slate-200 px-2 rounded-xl">
+            <VscAdd className="text-slate-600 w-4 h-4 dark:text-slate-300" />
+            <p className="text-slate-600  dark:text-slate-300">New Task</p>
           </div>
         </div>
       </div>
