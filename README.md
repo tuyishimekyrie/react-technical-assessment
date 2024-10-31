@@ -1,3 +1,11 @@
+![image](./src/assets/darkmode.png)
+
+![image](https://github.com/user-attachments/assets/e8b88ba3-b583-47ce-b191-a1f641540713)
+
+![image](./src/assets/Screenshot%202024-10-31%20at%2014.28.20.png)
+
+![image](./src/assets/Screenshot%202024-10-31%20at%2014.28.50.png)
+
 # Project Title
 
 ## Description
