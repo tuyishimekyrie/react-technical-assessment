@@ -18,7 +18,7 @@ describe('Header Component', () => {
 
   it('renders a paragraph with "Search" text', () => {
     render(<Header />);
-    
+
     const searchParagraph = screen.getByText('Search');
     expect(searchParagraph).toBeInTheDocument();
     expect(searchParagraph.tagName).toBe('P');

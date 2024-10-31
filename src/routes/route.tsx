@@ -1,31 +1,31 @@
-import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
-import Dashboard from "../pages/dashboard";
-import RootLayout from "../layouts/rootLayout";
+import { createBrowserRouter } from 'react-router-dom';
+import App from '../App';
+import Dashboard from '../pages/dashboard';
+import RootLayout from '../layouts/rootLayout';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <RootLayout />,
     children: [
       {
-        path: "",
+        path: '',
         element: <App />,
       },
       {
-        path: "/dashboard",
+        path: '/dashboard',
         element: <Dashboard />,
       },
       {
-        path: "/mail",
+        path: '/mail',
         element: <Dashboard />,
       },
       {
-        path: "/documents",
+        path: '/documents',
         element: <Dashboard />,
       },
       {
-        path: "/analytics",
+        path: '/analytics',
         element: <Dashboard />,
       },
     ],

@@ -1,15 +1,15 @@
-import classNames from "classnames";
-import { AiOutlineMessage } from "react-icons/ai";
-import { PiDotsThreeVerticalBold } from "react-icons/pi";
-import p1 from "../assets/p1.jpg";
-import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
-import p4 from "../assets/p4.jpg";
-import { todo } from "../types/todo";
-import ProfileImage from "./ProfileImage";
+import classNames from 'classnames';
+import { AiOutlineMessage } from 'react-icons/ai';
+import { PiDotsThreeVerticalBold } from 'react-icons/pi';
+import p1 from '../assets/p1.jpg';
+import p2 from '../assets/p2.jpg';
+import p3 from '../assets/p3.jpg';
+import p4 from '../assets/p4.jpg';
+import { todo } from '../types/todo';
+import ProfileImage from './ProfileImage';
 
 interface TodoProp {
-  color: "red" | "blue" | "green" | "yellow";
+  color: 'red' | 'blue' | 'green' | 'yellow';
   todo: todo;
 }
 
@@ -23,19 +23,18 @@ const Todo = ({ todo }: TodoProp) => {
 
   return (
     <div className="">
-
       <div
         data-testid={`todo-${todo.id}`}
         className="flex flex-col gap-4 w-64 h-60 justify-between p-4 rounded-2xl bg-white dark:bg-gray-800"
       >
         <div className="flex items-center justify-between">
           <p
-            className={classNames("px-2 rounded-md", {
-              "text-green-500 bg-green-50": todo.completed,
-              "text-red-500 bg-red-50": !todo.completed,
+            className={classNames('px-2 rounded-md', {
+              'text-green-500 bg-green-50': todo.completed,
+              'text-red-500 bg-red-50': !todo.completed,
             })}
           >
-            {todo.completed ? "completed" : "In Progress"}
+            {todo.completed ? 'completed' : 'In Progress'}
           </p>
           <PiDotsThreeVerticalBold className="dark:text-white" />
         </div>

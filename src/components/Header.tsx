@@ -1,8 +1,8 @@
-import { CiSearch } from "react-icons/ci";
-import { HiOutlineBell } from "react-icons/hi";
-import { MdOutlineNightlight } from "react-icons/md";
-import useThemeStore from "../store/themeStore";
-import { WiDaySunny } from "react-icons/wi";
+import { CiSearch } from 'react-icons/ci';
+import { HiOutlineBell } from 'react-icons/hi';
+import { MdOutlineNightlight } from 'react-icons/md';
+import useThemeStore from '../store/themeStore';
+import { WiDaySunny } from 'react-icons/wi';
 // import Bubble from "./Bubble";
 
 const Header = () => {

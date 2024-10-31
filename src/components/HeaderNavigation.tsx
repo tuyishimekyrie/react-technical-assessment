@@ -1,20 +1,20 @@
-import { BsHddStackFill } from "react-icons/bs";
-import { HiOutlineLockOpen } from "react-icons/hi";
-import { IoAdd } from "react-icons/io5";
-import { PiLineVerticalThin } from "react-icons/pi";
-import { RiArrowDropDownLine, RiLinkM } from "react-icons/ri";
-import { RxDashboard } from "react-icons/rx";
-import p1 from "../assets/p1.jpg";
-import p2 from "../assets/p2.jpg";
-import p3 from "../assets/p3.jpg";
-import p4 from "../assets/p4.jpg";
+import { BsHddStackFill } from 'react-icons/bs';
+import { HiOutlineLockOpen } from 'react-icons/hi';
+import { IoAdd } from 'react-icons/io5';
+import { PiLineVerticalThin } from 'react-icons/pi';
+import { RiArrowDropDownLine, RiLinkM } from 'react-icons/ri';
+import { RxDashboard } from 'react-icons/rx';
+import p1 from '../assets/p1.jpg';
+import p2 from '../assets/p2.jpg';
+import p3 from '../assets/p3.jpg';
+import p4 from '../assets/p4.jpg';
 
-import ProfileImage from "./ProfileImage";
+import ProfileImage from './ProfileImage';
 
 const HeaderNavigation = () => {
   return (
     <div className="dark:bg-gray-900">
-      {" "}
+      {' '}
       <div className="text-white    py-4 px-10">
         <div className="flex justify-between">
           <p className="text-gray-400">
