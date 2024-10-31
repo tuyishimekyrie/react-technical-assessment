@@ -43,7 +43,7 @@ const Todos = () => {
             className={`flex items-center border-b-4 gap-4 p-4 cursor-pointer  ${filter === 'all' ? 'border-violet-700 text-violet-700 dark:text-violet-400' : 'border-none text-gray-400'}`}
             onClick={() => handleFilterChange('all')}
           >
-            <p className=''>All Tasks</p>
+            <p className="">All Tasks</p>
             <p className="bg-gray-200 px-2 py-1 text-xs rounded-lg">
               {todos?.todos.length}
             </p>
