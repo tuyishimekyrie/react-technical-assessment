@@ -19,7 +19,7 @@ A brief description of your project, its purpose, and the problem it solves.
 - [Features](#features)
 - [Technologies](#technologies)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Installation
 
