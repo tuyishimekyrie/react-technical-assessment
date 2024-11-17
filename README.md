@@ -18,7 +18,6 @@ A brief description of your project, its purpose, and the problem it solves.
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Contributing](#contributing)
 
 
 ## Installation
